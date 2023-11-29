@@ -13,8 +13,6 @@ triggering a failed pipeline with a test failing for the good reason.
 
 ## Going further
 
-* You probably wrote your workflow so that `pytest` is installed everytime - can
-  you speed things up by using a cache ?
 
 * Add an other workflow that runs `black --check`
 
@@ -23,3 +21,6 @@ triggering a failed pipeline with a test failing for the good reason.
 * Run the tests on Linux, macOS, Windows
  
  * Install and setup `pre-commit` for running black locally - adapt CI workflows accordingly
+  
+* You probably wrote your workflows so that `pytest` is installed everytime - can
+  you speed things up by using a cache ?
