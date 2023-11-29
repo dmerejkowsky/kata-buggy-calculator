@@ -7,7 +7,7 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        python-version: [3.11, 3.12]
+        python-version: ["3.10", "3.11", "3.12"]
         os: [ubuntu-latest, macos-latest, windows-latest]
 
     steps:
@@ -40,7 +40,7 @@ jobs:
         black --check .
 
     - name: Install pre-commit
-      if: matrix.python-version == '3.11' && matrix.os == 'ubuntu-latest'
+      if: matrix.python-version == '3.10' && matrix.os == 'ubuntu-latest'
       run: |
         pip install pre-commit
         pre-commit install
