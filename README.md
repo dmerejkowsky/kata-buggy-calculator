@@ -1,5 +1,7 @@
 # Calculator
 
+_Note: if you fork this repository, remember to make PR that target your fork, not mine :)_
+
 Oh no! Someone pushed [a bad commit](https://github.com/dmerejkowsky/kata-buggy-calculator/commit/dd3cea773b6bb9ee73243a739820d094584f286f)  that introduced a regression ...
 
 The tests are now failing on the main branch.
