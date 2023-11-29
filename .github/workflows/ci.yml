@@ -22,7 +22,7 @@ jobs:
       uses: actions/cache@v2
       with:
         path: ~/.cache/pip
-        key: ${{ runner.os }}-py${{ matrix.python-version }}-${{ hashFiles('**/requirements.txt') }}
+        key: ${{ runner.os }}-py${{ matrix.python-version }}
         restore-keys: |
           ${{ runner.os }}-py${{ matrix.python-version }}-
 
